@@ -33,7 +33,7 @@ body {
 }
 
 section {
-    height: 100vh; 
+    height: 100vh;
     overflow-y: auto;
     min-height: 100vh;
     padding: 10rem 9% 2rem;
@@ -68,7 +68,7 @@ section {
 
 .navbar a:hover,
 .navbar a:active {
-    color: var(--text-color);
+    color: var(--main-color);
 }
 
 #menu-icon {
@@ -423,7 +423,8 @@ span {
     #menu-icon {
         display: block;
     }
-    .navbar{
+
+    .navbar {
 
         position: absolute;
         top: 100%;
@@ -431,13 +432,22 @@ span {
         width: 100%;
         padding: 1rem 3%;
         background: var(--bg-color);
-        border-top: .1rem solid rgba(0,0,0,0.2);
-        box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+        border-top: .1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
         display: none;
     }
-    .navbar.active{
+
+    .navbar.active {
         display: block;
+
     }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
     .home {
         flex-direction: column;
     }
@@ -481,27 +491,28 @@ span {
     }
 }
 
-@media (max-width:617px)
-{
-    .portfolio-container{
+@media (max-width:617px) {
+    .portfolio-container {
         grid-template-columns: 1fr;
     }
-    .home-img img{
+
+    .home-img img {
         width: 80vw;
         margin-top: 8rem;
     }
-    .about-img img{
+
+    .about-img img {
         width: 80vw;
         margin-top: 4rem;
     }
 }
 
-@media (max-width:450px)
-{
-    html{
+@media (max-width:450px) {
+    html {
         font-size: 50%;
     }
-    .contact form .input-box input{
+
+    .contact form .input-box input {
         width: 100%;
     }
 }
