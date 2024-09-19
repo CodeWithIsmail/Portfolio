@@ -21,14 +21,20 @@
 html {
     font-size: 62.5%;
     overflow-x: hidden;
+    height: 100%;
+
 }
 
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    overflow: hidden;
+    height: 100%;
 }
 
 section {
+    height: 100vh; 
+    overflow-y: auto;
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
@@ -417,7 +423,21 @@ span {
     #menu-icon {
         display: block;
     }
+    .navbar{
 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0,0,0,0.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
     .home {
         flex-direction: column;
     }
