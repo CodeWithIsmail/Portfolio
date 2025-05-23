@@ -25,7 +25,7 @@ const greeting = {
   subTitle:
     "Inspired by a passion for innovation and problem-solving, I am a dynamic software developer with expertise in Flutter app development, Web Development. My commitment to clean code, innovative solutions reflects my dedication to delivering practical solutions for real-world challenges.",
   resumeLink:
-    "https://drive.google.com/file/d/1k9fF2ebdYuwRojtQARn5PHckj3T5PpSF/view?usp=sharing",
+    "https://drive.google.com/file/d/1dKhv9NSHcpP2QxiuGCLoZNBCaeeMhYO8/view?usp=sharing",
   portfolio_repository: "https://github.com/codewithismail",
   githubProfile: "https://github.com/codewithismail",
 };
