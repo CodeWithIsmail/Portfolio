@@ -1,58 +1,93 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
-import { Code, Laptop, Server, Wrench, Trophy, Star } from 'lucide-react'
-
+import { Code, Laptop, Database, Wrench, TestTube, Brain } from 'lucide-react'
+import { 
+  SiC, SiCplusplus, SiJavascript, SiDart, SiFlutter, SiHtml5, SiCss3, 
+  SiReact, SiNodedotjs, SiMysql, SiMongodb, SiFirebase, SiCloudinary,
+  SiGit, SiGithub, SiDocker, SiIntellijidea, 
+  SiAndroidstudio, SiPostman, SiVercel, SiSelenium, SiWireshark,
+  SiVirtualbox
+} from 'react-icons/si'
+import { FaJava } from 'react-icons/fa'
+import { BiLogoVisualStudio } from "react-icons/bi";
 const SkillsPage = () => {
-  const [activeCategory, setActiveCategory] = useState('languages')
 
-  const skillCategories = {
-    languages: {
+  const skillCategories = [
+    {
       title: 'Programming Languages',
-      icon: <Code className="w-6 h-6" />,
+      icon: <Code className="w-8 h-8" />,
+      gradient: 'from-blue-500 to-purple-600',
       skills: [
-        { name: 'JavaScript', level: 90, color: 'bg-yellow-400', textColor: 'text-yellow-600' },
-        { name: 'TypeScript', level: 80, color: 'bg-blue-500', textColor: 'text-blue-600' },
-        { name: 'Java', level: 85, color: 'bg-orange-500', textColor: 'text-orange-600' },
-        { name: 'C++', level: 90, color: 'bg-blue-600', textColor: 'text-blue-600' },
-        { name: 'C', level: 85, color: 'bg-gray-500', textColor: 'text-gray-600' },
-        { name: 'Dart', level: 80, color: 'bg-cyan-500', textColor: 'text-cyan-600' },
-        { name: 'Python', level: 75, color: 'bg-green-500', textColor: 'text-green-600' }
+        { name: 'C', icon: <SiC className="w-8 h-8" style={{color: '#A8B9CC'}} /> },
+        { name: 'C++', icon: <SiCplusplus className="w-8 h-8" style={{color: '#00599C'}} /> },
+        { name: 'Java', icon: <FaJava className="w-8 h-8" style={{color: '#ED8B00'}} /> },
+        { name: 'JavaScript', icon: <SiJavascript className="w-8 h-8" style={{color: '#F7DF1E'}} /> },
+        { name: 'Dart', icon: <SiDart className="w-8 h-8" style={{color: '#0175C2'}} /> }
       ]
     },
-    frontend: {
-      title: 'Frontend Development',
-      icon: <Laptop className="w-6 h-6" />,
+    {
+      title: 'Web & Mobile Development',
+      icon: <Laptop className="w-8 h-8" />,
+      gradient: 'from-green-500 to-teal-600',
       skills: [
-        { name: 'React.js', level: 90, color: 'bg-cyan-400', textColor: 'text-cyan-600' },
-        { name: 'HTML5', level: 95, color: 'bg-orange-500', textColor: 'text-orange-600' },
-        { name: 'CSS3', level: 90, color: 'bg-blue-500', textColor: 'text-blue-600' },
-        { name: 'Flutter', level: 85, color: 'bg-blue-600', textColor: 'text-blue-600' },
-        { name: 'React Native', level: 80, color: 'bg-cyan-400', textColor: 'text-cyan-600' }
+        { name: 'Flutter', icon: <SiFlutter className="w-8 h-8" style={{color: '#02569B'}} /> },
+        { name: 'HTML', icon: <SiHtml5 className="w-8 h-8" style={{color: '#E34F26'}} /> },
+        { name: 'CSS', icon: <SiCss3 className="w-8 h-8" style={{color: '#1572B6'}} /> },
+        { name: 'React', icon: <SiReact className="w-8 h-8" style={{color: '#61DAFB'}} /> },
+        { name: 'Node.js', icon: <SiNodedotjs className="w-8 h-8" style={{color: '#339933'}} /> }
       ]
     },
-    backend: {
-      title: 'Backend & Database',
-      icon: <Server className="w-6 h-6" />,
+    {
+      title: 'Databases & Backend',
+      icon: <Database className="w-8 h-8" />,
+      gradient: 'from-orange-500 to-red-600',
       skills: [
-        { name: 'Node.js', level: 85, color: 'bg-green-500', textColor: 'text-green-600' },
-        { name: 'MongoDB', level: 80, color: 'bg-green-600', textColor: 'text-green-600' },
-        { name: 'SQL', level: 85, color: 'bg-blue-600', textColor: 'text-blue-600' },
-        { name: 'Firebase', level: 90, color: 'bg-yellow-500', textColor: 'text-yellow-600' },
-        { name: 'Cloudinary', level: 75, color: 'bg-indigo-500', textColor: 'text-indigo-600' }
+        { name: 'SQL', icon: <SiMysql className="w-8 h-8" style={{color: '#4479A1'}} /> },
+        { name: 'MongoDB', icon: <SiMongodb className="w-8 h-8" style={{color: '#47A248'}} /> },
+        { name: 'Firebase', icon: <SiFirebase className="w-8 h-8" style={{color: '#FFCA28'}} /> },
+        { name: 'Cloudinary', icon: <SiCloudinary className="w-8 h-8" style={{color: '#3448C5'}} /> }
       ]
     },
-    tools: {
+    {
       title: 'Tools & Platforms',
-      icon: <Wrench className="w-6 h-6" />,
+      icon: <Wrench className="w-8 h-8" />,
+      gradient: 'from-purple-500 to-pink-600',
       skills: [
-        { name: 'Git', level: 90, color: 'bg-red-500', textColor: 'text-red-600' },
-        { name: 'GitHub', level: 90, color: 'bg-gray-800', textColor: 'text-gray-600' },
-        { name: 'VS Code', level: 95, color: 'bg-blue-600', textColor: 'text-blue-600' },
-        { name: 'Android Studio', level: 80, color: 'bg-green-500', textColor: 'text-green-600' },
-        { name: 'IntelliJ IDEA', level: 85, color: 'bg-gray-800', textColor: 'text-gray-600' }
+        { name: 'Git', icon: <SiGit className="w-8 h-8" style={{color: '#F05032'}} /> },
+        { name: 'GitHub', icon: <SiGithub className="w-8 h-8" style={{color: '#181717'}} /> },
+        { name: 'Docker', icon: <SiDocker className="w-8 h-8" style={{color: '#2496ED'}} /> },
+        { name: 'VS Code', icon: <BiLogoVisualStudio className="w-8 h-8" style={{color: '#007ACC'}} /> },
+        { name: 'IntelliJ IDEA', icon: <SiIntellijidea className="w-8 h-8" style={{color: '#000000'}} /> },
+        { name: 'Android Studio', icon: <SiAndroidstudio className="w-8 h-8" style={{color: '#3DDC84'}} /> },
+        { name: 'Postman', icon: <SiPostman className="w-8 h-8" style={{color: '#FF6C37'}} /> },
+        { name: 'Vercel', icon: <SiVercel className="w-8 h-8" style={{color: '#000000'}} /> }
+      ]
+    },
+    {
+      title: 'Testing & Others',
+      icon: <TestTube className="w-8 h-8" />,
+      gradient: 'from-cyan-500 to-blue-600',
+      skills: [
+        { name: 'Selenium', icon: <SiSelenium className="w-8 h-8" style={{color: '#43B02A'}} /> },
+        { name: 'Wireshark', icon: <SiWireshark className="w-8 h-8" style={{color: '#1679A7'}} /> },
+        { name: 'VirtualBox', icon: <SiVirtualbox className="w-8 h-8" style={{color: '#183A61'}} /> }
+      ]
+    },
+    {
+      title: 'Core Concepts',
+      icon: <Brain className="w-8 h-8" />,
+      gradient: 'from-indigo-500 to-purple-600',
+      skills: [
+        { name: 'DSA', icon: <Code className="w-8 h-8" /> },
+        { name: 'OOP', icon: <Code className="w-8 h-8" /> },
+        { name: 'Design Patterns', icon: <Code className="w-8 h-8" /> },
+        { name: 'SRS', icon: <Code className="w-8 h-8" /> },
+        { name: 'DBMS', icon: <Database className="w-8 h-8" /> },
+        { name: 'SDLC', icon: <Code className="w-8 h-8" /> },
+        { name: 'Testing', icon: <TestTube className="w-8 h-8" /> }
       ]
     }
-  }
+  ]
 
   return (
     <div className="min-h-screen pt-24 px-4">
@@ -73,99 +108,106 @@ const SkillsPage = () => {
           </p>
         </motion.div>
 
-        {/* Category Tabs */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex flex-wrap justify-center gap-4 mb-12"
-        >
-          {Object.entries(skillCategories).map(([key, category]) => (
-            <motion.button
-              key={key}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => setActiveCategory(key)}
-              className={`flex items-center space-x-2 px-6 py-3 rounded-2xl font-semibold transition-all duration-300 ${
-                activeCategory === key
-                  ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg shadow-blue-500/25'
-                  : 'bg-white/80 dark:bg-gray-800/80 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400'
-              }`}
-            >
-              {category.icon}
-              <span>{category.title}</span>
-            </motion.button>
-          ))}
-        </motion.div>
-
-        {/* Skills Grid */}
-        <motion.div
-          key={activeCategory}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
-        >
-          {skillCategories[activeCategory].skills.map((skill, index) => (
+        {/* Skills Categories Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {skillCategories.map((category, categoryIndex) => (
             <motion.div
-              key={skill.name}
+              key={category.title}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ scale: 1.02, y: -2 }}
+              transition={{ delay: categoryIndex * 0.1 }}
+              whileHover={{ scale: 1.02, y: -5 }}
               className="p-6 rounded-2xl backdrop-blur-md border bg-white/80 dark:bg-gray-900/80 border-gray-200/50 dark:border-gray-700/50 shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                  {skill.name}
+              {/* Category Header */}
+              <div className="flex items-center space-x-3 mb-6">
+                <div className={`p-3 rounded-xl bg-gradient-to-r ${category.gradient} text-white shadow-lg`}>
+                  {category.icon}
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                  {category.title}
                 </h3>
-                <div className="flex items-center space-x-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className={`w-4 h-4 ${
-                        i < Math.floor(skill.level / 20)
-                          ? 'text-yellow-400 fill-current'
-                          : 'text-gray-300 dark:text-gray-600'
-                      }`}
-                    />
-                  ))}
-                </div>
               </div>
-              
-              <div className="space-y-2">
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600 dark:text-gray-400">Proficiency</span>
-                  <span className={`text-sm font-semibold ${skill.textColor}`}>
-                    {skill.level}%
-                  </span>
-                </div>
-                
-                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+
+              {/* Skills Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                {category.skills.map((skill, skillIndex) => (
                   <motion.div
-                    initial={{ width: 0 }}
-                    animate={{ width: `${skill.level}%` }}
-                    transition={{ duration: 1, delay: index * 0.1 }}
-                    className={`h-2 rounded-full ${skill.color}`}
-                  />
-                </div>
+                    key={skill.name}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: (categoryIndex * 0.1) + (skillIndex * 0.05) }}
+                    whileHover={{ scale: 1.1, y: -2 }}
+                    className="flex flex-col items-center p-3 rounded-xl bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 group"
+                  >
+                    <div className="mb-2 transform group-hover:scale-110 transition-transform duration-300">
+                      {skill.icon}
+                    </div>
+                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300 text-center">
+                      {skill.name}
+                    </span>
+                  </motion.div>
+                ))}
               </div>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
 
-        {/* Additional Info */}
+        {/* Additional Stats */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-16 text-center"
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="mt-20 text-center"
         >
-          <div className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-2xl border border-blue-200 dark:border-blue-800">
-            <Trophy className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-            <span className="text-gray-700 dark:text-gray-300">
-              Continuously learning and expanding my skill set
-            </span>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="p-6 rounded-2xl backdrop-blur-md border bg-white/80 dark:bg-gray-900/80 border-gray-200/50 dark:border-gray-700/50 shadow-lg"
+              >
+                <Code className="w-8 h-8 text-blue-600 dark:text-blue-400 mx-auto mb-3" />
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                  Programming Excellence
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Strong foundation in multiple programming languages and paradigms
+                </p>
+              </motion.div>
+              
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="p-6 rounded-2xl backdrop-blur-md border bg-white/80 dark:bg-gray-900/80 border-gray-200/50 dark:border-gray-700/50 shadow-lg"
+              >
+                <Laptop className="w-8 h-8 text-green-600 dark:text-green-400 mx-auto mb-3" />
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                  Full-Stack Development
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  End-to-end application development from frontend to backend
+                </p>
+              </motion.div>
+              
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="p-6 rounded-2xl backdrop-blur-md border bg-white/80 dark:bg-gray-900/80 border-gray-200/50 dark:border-gray-700/50 shadow-lg"
+              >
+                <TestTube className="w-8 h-8 text-purple-600 dark:text-purple-400 mx-auto mb-3" />
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                  Quality Assurance
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Testing and debugging skills to ensure robust applications
+                </p>
+              </motion.div>
+            </div>
+            
+            <div className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-2xl border border-blue-200 dark:border-blue-800">
+              <Brain className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+              <span className="text-gray-700 dark:text-gray-300 font-medium">
+                Passionate about solving complex problems with elegant solutions
+              </span>
+            </div>
           </div>
         </motion.div>
       </div>
