@@ -29,7 +29,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               <Code className="w-6 h-6" />
             </div>
             <span className="text-xl font-bold text-gray-900 dark:text-white">
-              Code<span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">WithIsmail</span>
+              CodeWith<span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Ismail</span>
             </span>
           </Link>
 
@@ -61,7 +61,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               className="flex items-center space-x-2 px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-white/20 dark:hover:bg-gray-800/30 transition-all duration-300 group"
             >
               <Trophy className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
-              <span className="font-medium">CP</span>
+              <span className="font-medium">Achievements</span>
             </Link>
             <Link
               to="/projects"
