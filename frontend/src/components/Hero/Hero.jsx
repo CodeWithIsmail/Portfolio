@@ -165,11 +165,7 @@ const Hero = () => {
               transition={{ delay: 0.6 }}
               className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg"
             >
-              I'm a Software Engineering undergrad student at University of
-              Dhaka, with expertise in Flutter app development, full-stack web
-              development. My active participation in competitive programming
-              contests has honed my problem-solving and algorithmic thinking
-              skills.
+              Software Engineering undergrad at the University of Dhaka with hands-on experience in Flutter app development and full-stack web development. Actively engaged in competitive programming, which has sharpened my problem-solving abilities and algorithmic thinking. Passionate about building efficient, user-centric applications and continuously learning new technologies. 
             </motion.p>
 
             {/* CTA Buttons */}

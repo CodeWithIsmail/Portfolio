@@ -115,38 +115,38 @@ const ProblemSolvingPage = () => {
         }
       ]
     },
-    'others': {
-      title: 'Others',
-      icon: <Medal className="w-6 h-6" />,
-      color: 'from-purple-500 to-pink-600',
-      achievements: [
-        {
-          title: 'IITSEC Competitive Programming Trainer',
-          description: 'Mentoring beginners in problem solving and competitive programming',
-          year: '2024-Present',
-          icon: <Users className="w-6 h-6" />
-        },
-        {
-          title: 'Learnathon 3.0 Certificate',
-          description: 'Certificate of completion from Geeky Solutions, Sponsored by Brain Station 23',
-          year: '2024-2025',
-          icon: <Award className="w-6 h-6" />,
-          link: 'https://learnathonproducts.geeky.solutions/products/df7c95d0-290c-40b4-a647-723003e88107/certificate'
-        },
-        {
-          title: 'LLMs in Industry and Academia Workshop',
-          description: 'Current trend Workshop by DSSE Research group, University of Dhaka',
-          year: '2025',
-          icon: <Brain className="w-6 h-6" />
-        },
-        {
-          title: 'Academic Excellence',
-          description: 'CGPA: 3.43 in Software Engineering, IIT, University of Dhaka',
-          year: '2022-Present',
-          icon: <Star className="w-6 h-6" />
-        }
-      ]
-    }
+    // 'others': {
+    //   title: 'Others',
+    //   icon: <Medal className="w-6 h-6" />,
+    //   color: 'from-purple-500 to-pink-600',
+    //   achievements: [
+    //     {
+    //       title: 'IITSEC Competitive Programming Trainer',
+    //       description: 'Mentoring beginners in problem solving and competitive programming',
+    //       year: '2024-Present',
+    //       icon: <Users className="w-6 h-6" />
+    //     },
+    //     {
+    //       title: 'Learnathon 3.0 Certificate',
+    //       description: 'Certificate of completion from Geeky Solutions, Sponsored by Brain Station 23',
+    //       year: '2024-2025',
+    //       icon: <Award className="w-6 h-6" />,
+    //       link: 'https://learnathonproducts.geeky.solutions/products/df7c95d0-290c-40b4-a647-723003e88107/certificate'
+    //     },
+    //     {
+    //       title: 'LLMs in Industry and Academia Workshop',
+    //       description: 'Current trend Workshop by DSSE Research group, University of Dhaka',
+    //       year: '2025',
+    //       icon: <Brain className="w-6 h-6" />
+    //     },
+    //     {
+    //       title: 'Academic Excellence',
+    //       description: 'CGPA: 3.43 in Software Engineering, IIT, University of Dhaka',
+    //       year: '2022-Present',
+    //       icon: <Star className="w-6 h-6" />
+    //     }
+    //   ]
+    // }
   }
 
   const skills = [
@@ -161,7 +161,7 @@ const ProblemSolvingPage = () => {
   ]
 
   return (
-    <div className="min-h-screen pt-24 px-4">
+    <div className="min-h-screen pt-24 px-4 py-2">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -316,7 +316,7 @@ const ProblemSolvingPage = () => {
         </motion.div>
 
         {/* Core Skills Section */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
@@ -342,7 +342,7 @@ const ProblemSolvingPage = () => {
               </motion.div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   )
