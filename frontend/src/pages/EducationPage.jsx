@@ -164,36 +164,36 @@ const EducationPage = () => {
   ];
 
   const certifications = [
-    {
-      title: "Complete Web Development Course",
-      issuer: "Programming Hero",
-      date: "2023",
-      credentialId: "WD-2023-001",
-      link: "#",
-      description:
-        "Comprehensive web development training covering frontend and backend technologies.",
-      skills: ["React.js", "Node.js", "MongoDB", "Express.js"],
-    },
-    {
-      title: "Problem Solving Certification",
-      issuer: "HackerRank",
-      date: "2023",
-      credentialId: "HR-PS-2023",
-      link: "#",
-      description:
-        "Demonstrated proficiency in algorithmic problem solving and data structures.",
-      skills: ["Algorithms", "Data Structures", "Problem Solving"],
-    },
-    {
-      title: "JavaScript Algorithms and Data Structures",
-      issuer: "freeCodeCamp",
-      date: "2022",
-      credentialId: "FCC-JS-2022",
-      link: "#",
-      description:
-        "Comprehensive course covering JavaScript fundamentals and algorithmic thinking.",
-      skills: ["JavaScript", "ES6+", "Algorithms", "Functional Programming"],
-    },
+    // {
+    //   title: "Complete Web Development Course",
+    //   issuer: "Programming Hero",
+    //   date: "2023",
+    //   credentialId: "WD-2023-001",
+    //   link: "#",
+    //   description:
+    //     "Comprehensive web development training covering frontend and backend technologies.",
+    //   skills: ["React.js", "Node.js", "MongoDB", "Express.js"],
+    // },
+    // {
+    //   title: "Problem Solving Certification",
+    //   issuer: "HackerRank",
+    //   date: "2023",
+    //   credentialId: "HR-PS-2023",
+    //   link: "#",
+    //   description:
+    //     "Demonstrated proficiency in algorithmic problem solving and data structures.",
+    //   skills: ["Algorithms", "Data Structures", "Problem Solving"],
+    // },
+    // {
+    //   title: "JavaScript Algorithms and Data Structures",
+    //   issuer: "freeCodeCamp",
+    //   date: "2022",
+    //   credentialId: "FCC-JS-2022",
+    //   link: "#",
+    //   description:
+    //     "Comprehensive course covering JavaScript fundamentals and algorithmic thinking.",
+    //   skills: ["JavaScript", "ES6+", "Algorithms", "Functional Programming"],
+    // },
   ];
 
   return (

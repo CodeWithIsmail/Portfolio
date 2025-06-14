@@ -188,7 +188,7 @@ const ProjectsPage = () => {
   }
 
   return (
-    <div className="min-h-screen pt-24 px-4">
+    <div className="min-h-screen pt-24 px-4 py-2">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -206,7 +206,7 @@ const ProjectsPage = () => {
           </p>
           
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
+          {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -243,7 +243,7 @@ const ProjectsPage = () => {
               <div className="text-3xl font-bold text-yellow-600 dark:text-yellow-400">2</div>
               <div className="text-sm text-gray-600 dark:text-gray-400">Hackathons</div>
             </motion.div>
-          </div>
+          </div> */}
         </motion.div>
 
         {/* Filter Tabs */}
@@ -517,18 +517,18 @@ const ProjectsPage = () => {
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <div>
                 <Trophy className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
-                <div className="text-lg font-semibold text-gray-900 dark:text-white">Hackathon Winner</div>
+                <div className="text-lg font-semibold text-gray-900 dark:text-white">Hackathon Finalist</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Multiple competition projects</div>
               </div>
               <div>
                 <Users className="w-8 h-8 text-blue-500 mx-auto mb-2" />
-                <div className="text-lg font-semibold text-gray-900 dark:text-white">900+ Active Users</div>
+                <div className="text-lg font-semibold text-gray-900 dark:text-white">900+ Users</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">CF Explorer platform</div>
               </div>
               <div>
                 <Code2 className="w-8 h-8 text-purple-500 mx-auto mb-2" />
                 <div className="text-lg font-semibold text-gray-900 dark:text-white">Full Stack Expert</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">End-to-end development</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">End-to-end App & Web development</div>
               </div>
             </div>
           </div>
