@@ -23,10 +23,10 @@ const Hero = () => {
     () => [
       "Problem Solver",
       "Competitive Programmer",
-      "Web Developer",
+      "Full Stack Web Developer",
       "Flutter App Developer",
     ],
-    []
+    [],
   );
 
   useEffect(() => {
@@ -58,7 +58,7 @@ const Hero = () => {
           }
         }
       },
-      isPaused ? pauseDuration : typeSpeed
+      isPaused ? pauseDuration : typeSpeed,
     );
 
     return () => clearTimeout(timeout);
@@ -71,13 +71,15 @@ const Hero = () => {
       description:
         "I build complete web solutions from responsive frontends to robust backends, handling everything from user interfaces to database design and API development.",
       techStack: [
-        "React",
-        "Node.js",
-        "Express",
+        "NodeJs",
+        "ExpressJs",
+        "NestJs",
+        "ReactJs",
+        "NextJs",
+        "PostgreSQL",
+        "MySQL",
         "MongoDB",
         "Tailwind CSS",
-        "Java",
-        "Spring Boot",
       ],
       color: "from-blue-500 to-cyan-500",
     },
@@ -165,7 +167,11 @@ const Hero = () => {
               transition={{ delay: 0.6 }}
               className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg"
             >
-              Software Engineering undergrad at the University of Dhaka with hands-on experience in Flutter app development and full-stack web development. Actively engaged in competitive programming, which has sharpened my problem-solving abilities and algorithmic thinking. Passionate about building efficient, user-centric applications and continuously learning new technologies. 
+              Software Engineering undergrad at the University of Dhaka with
+              experience in Full-stack web development using JavaScript,
+              TypeScript, ExpressJS, NestJS, NextJS and Flutter app development.
+              Actively involved in competitive programming, enhancing strong
+              problem-solving and algorithmic skills.
             </motion.p>
 
             {/* CTA Buttons */}

@@ -22,7 +22,7 @@ const EducationPage = () => {
       degree: "Bachelor of Science in Software Engineering",
       institution: "Institute of Information Technology, University of Dhaka",
       duration: "2022 - 2026 (Expected)",
-      cgpa: "CGPA: 3.43/4.00",
+      cgpa: "CGPA: 3.53 (up to 6th semester)",
       status: "Current",
       icon: <GraduationCap className="w-6 h-6" />,
       description:
@@ -164,16 +164,16 @@ const EducationPage = () => {
   ];
 
   const certifications = [
-    // {
-    //   title: "Complete Web Development Course",
-    //   issuer: "Programming Hero",
-    //   date: "2023",
-    //   credentialId: "WD-2023-001",
-    //   link: "#",
-    //   description:
-    //     "Comprehensive web development training covering frontend and backend technologies.",
-    //   skills: ["React.js", "Node.js", "MongoDB", "Express.js"],
-    // },
+    {
+      title: "Learnathon 3.0",
+      issuer: "Geeky Solutions - Brain Station 23",
+      date: "Dec 2024 – Apr 2025",
+      // credentialId: "WD-2023-001",
+      link: "https://learnathonproducts.geeky.solutions/products/df7c95d0-290c-40b4-a647-723003e88107/certificate",
+      description:
+        "Industry standard MERN stack web development  training covering React.js, Node.js, Express.js, and MongoDB.",
+      skills: ["React.js", "Node.js", "MongoDB", "Express.js"],
+    },
     // {
     //   title: "Problem Solving Certification",
     //   issuer: "HackerRank",
@@ -271,59 +271,6 @@ const EducationPage = () => {
           ))}
         </div>
 
-        {/* Notable Courses Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="mb-20"
-        >
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-            Notable Courses
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {notableCourses.map((course, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.7 + index * 0.1 }}
-                whileHover={{ scale: 1.05, y: -5 }}
-                className="p-6 rounded-xl backdrop-blur-md border bg-white/80 dark:bg-gray-900/80 border-gray-200/50 dark:border-gray-700/50 shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                <div className="flex items-center mb-4">
-                  <div className="p-2 rounded-lg bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400 mr-3">
-                    {course.icon}
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-gray-900 dark:text-white">
-                      {course.title}
-                    </h3>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                      {course.institution}
-                    </p>
-                  </div>
-                </div>
-
-                <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm">
-                  {course.description}
-                </p>
-
-                <div className="flex flex-wrap gap-1">
-                  {course.skills.map((skill, skillIndex) => (
-                    <span
-                      key={skillIndex}
-                      className="px-2 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded text-xs font-medium"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-
         {/* Certifications & Licenses Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -384,6 +331,59 @@ const EducationPage = () => {
                     <span
                       key={skillIndex}
                       className="px-2 py-1 bg-yellow-50 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 rounded text-xs font-medium"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Notable Courses Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="mb-20"
+        >
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
+            Notable Courses
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {notableCourses.map((course, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.7 + index * 0.1 }}
+                whileHover={{ scale: 1.05, y: -5 }}
+                className="p-6 rounded-xl backdrop-blur-md border bg-white/80 dark:bg-gray-900/80 border-gray-200/50 dark:border-gray-700/50 shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <div className="flex items-center mb-4">
+                  <div className="p-2 rounded-lg bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400 mr-3">
+                    {course.icon}
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                      {course.title}
+                    </h3>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                      {course.institution}
+                    </p>
+                  </div>
+                </div>
+
+                <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm">
+                  {course.description}
+                </p>
+
+                <div className="flex flex-wrap gap-1">
+                  {course.skills.map((skill, skillIndex) => (
+                    <span
+                      key={skillIndex}
+                      className="px-2 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded text-xs font-medium"
                     >
                       {skill}
                     </span>
