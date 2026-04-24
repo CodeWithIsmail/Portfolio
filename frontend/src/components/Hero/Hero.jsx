@@ -71,11 +71,11 @@ const Hero = () => {
       description:
         "I build complete web solutions from responsive frontends to robust backends, handling everything from user interfaces to database design and API development.",
       techStack: [
-        "NodeJs",
-        "ExpressJs",
-        "NestJs",
-        "ReactJs",
-        "NextJs",
+        "Node.js",
+        "Express.js",
+        "NestJS",
+        "React.js",
+        "Next.js",
         "PostgreSQL",
         "MySQL",
         "MongoDB",
