@@ -96,23 +96,23 @@ const SkillsPage = () => {
           icon: <SiCss3 className="w-8 h-8" style={{ color: "#1572B6" }} />,
         },
         {
-          name: "ReactJs",
+          name: "React.js",
           icon: <SiReact className="w-8 h-8" style={{ color: "#61DAFB" }} />,
         },
         {
-          name: "NextJs",
+          name: "Next.js",
           icon: (
             <SiNextdotjs className="w-8 h-8" style={{ color: "#000000" }} />
           ),
         },
         {
-          name: "NodeJs",
+          name: "Node.js",
           icon: (
             <SiNodedotjs className="w-8 h-8" style={{ color: "#339933" }} />
           ),
         },
         {
-          name: "ExpressJs",
+          name: "Express.js",
           icon: <SiExpress className="w-8 h-8" style={{ color: "#000000" }} />,
         },
         {
