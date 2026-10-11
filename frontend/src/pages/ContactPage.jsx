@@ -33,16 +33,19 @@ const ContactPage = () => {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      toast.success("Message sent successfully! I'll get back to you soon.");
-      setIsSubmitting(false);
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    }, 2000);
+    const subject = encodeURIComponent(formData.subject);
+    const body = encodeURIComponent(
+      `${formData.message}\n\n— ${formData.name} (${formData.email})`,
+    );
+    window.location.href = `mailto:ismail.iit.du@gmail.com?subject=${subject}&body=${body}`;
+
+    toast.success("Opening your email client to send the message.");
+    setIsSubmitting(false);
+    setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
   const contactInfo = [

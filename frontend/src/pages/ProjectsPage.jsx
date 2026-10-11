@@ -5,7 +5,8 @@ import {
   SiReact, SiFirebase, SiVercel, SiFlutter, SiMongodb, SiNodedotjs, SiExpress,
   SiCloudinary, SiCplusplus, SiJavascript, SiHtml5, SiCss3, SiDart,
   SiGooglecloud, SiAndroid, SiIos, SiMysql, SiPostgresql, SiTailwindcss,
-  SiBootstrap, SiTypescript, SiPython, SiGit, SiGithub, SiDocker
+  SiBootstrap, SiTypescript, SiPython, SiGit, SiGithub, SiDocker,
+  SiFlask, SiNextdotjs, SiNestjs, SiPrisma, SiNginx, SiSonarqube, SiGoogle
 } from 'react-icons/si'
 import { FaGamepad, FaJava } from 'react-icons/fa'
 
@@ -15,29 +16,47 @@ const ProjectsPage = () => {
   const projects = [
     {
       id: 1,
+      title: 'AutoRestTest',
+      subtitle: 'AI-Powered Automated REST API Testing',
+      description: 'Reinforcement learning and LLM powered system to detect server-side faults and provide AI-generated explanations for test failures in REST APIs.',
+      category: 'fullstack',
+      group: 'personal',
+      type: 'AI Web Platform',
+      duration: 'May 2026 – Sept 2026',
+      technologies: ['Python', 'Flask', 'Next.js', 'NestJS', 'Tailwind CSS', 'PostgreSQL', 'Prisma'],
+      liveUrl: 'https://autoresttest.vercel.app',
+      githubUrl: 'https://devismail.me/autoresttest',
+      featured: true,
+      achievements: ['Reinforcement Learning', 'LLM-Powered'],
+      icon: '🤖'
+    },
+    {
+      id: 2,
       title: 'CF Explorer',
       subtitle: 'Your ultimate Codeforces companion',
-      description: 'Platform for Competitive programmers on Codeforces to track progress, analyze stats, prep for contests, explore problems, and compare with peers.',
+      description: 'Platform for Competitive programmers on Codeforces to track progress, analyze statistics, prepare for contests, explore problems, generate insightful profile card and compare with peers.',
       category: 'fullstack',
+      group: 'personal',
       type: 'Web & Mobile',
       duration: 'Dec 2024 – Mar 2025',
-      technologies: ['React', 'Firebase', 'Vercel', 'Flutter'],
-      webUrl: 'https://cfexplorer.vercel.app',
+      technologies: ['React', 'Tailwind CSS', 'Firebase', 'Vercel', 'Flutter'],
+      webUrl: 'https://cfexplorer.devismail.me',
       webDemo: 'https://youtu.be/VSUXCiAALdM',
       apkUrl: 'https://github.com/CodeWithIsmail/CF-Explorer-App/releases/tag/v1.0.0',
       appDemo: 'https://youtu.be/49m8BC4dgdE',
       githubUrl: 'https://github.com/CodeWithIsmail/CF-Explorer',
-      users: '900+',
+      users: '1K+',
       featured: true,
-      achievements: ['900+ users', 'Dual Platform'],
+      achievements: ['1K+ users', 'Dual Platform'],
       icon: '🏆'
     },
     {
-      id: 2,
+      id: 3,
       title: 'HealthMate',
       subtitle: 'Personal Health Tracking Solution',
       description: 'Health tracking app with uploading and analyzing medical report, monitoring trends, and sharing health insights.',
       category: 'mobile',
+      group: 'team',
       type: 'Mobile App',
       duration: 'Oct 2024 – Feb 2025',
       technologies: ['Flutter', 'Firebase', 'Cloudinary', 'MongoDB', 'Node.js'],
@@ -49,14 +68,15 @@ const ProjectsPage = () => {
       icon: '🏥'
     },
     {
-      id: 3,
+      id: 4,
       title: 'DU Tutors',
       subtitle: 'Tuition Job Platform for DU Students',
       description: 'Web app for DU students to find and apply for tuition jobs, with profiles, applications, and chat features.',
       category: 'web',
+      group: 'team',
       type: 'Web Application',
       duration: 'Dec 2024 – Apr 2025',
-      technologies: ['MongoDB', 'Express.js', 'React', 'Node.js'],
+      technologies: ['React', 'Node.js', 'MongoDB', 'SonarQube', 'CI/CD', 'Google Auth', 'Cloudinary'],
       liveUrl: 'https://dututors.onrender.com',
       githubUrl: 'https://github.com/Learnathon-By-Geeky-Solutions/react-ive',
       featured: true,
@@ -64,14 +84,15 @@ const ProjectsPage = () => {
       icon: '🎓'
     },
     {
-      id: 4,
+      id: 5,
       title: 'BigganPathshala',
       subtitle: 'Interactive Science Learning Platform',
       description: 'Interactive science learning and science content-sharing platform with tutorials, blogs, and quizzes.',
       category: 'web',
+      group: 'team',
       type: 'Web Application',
       duration: 'May 2025',
-      technologies: ['React', 'Firebase', 'Cloudinary', 'Vercel'],
+      technologies: ['React', 'Tailwind CSS', 'Firebase', 'Cloudinary', 'Vercel'],
       liveUrl: 'https://bigganpathshala.vercel.app',
       githubUrl: 'https://github.com/CodeWithIsmail/BigganPathshala',
       featured: true,
@@ -79,14 +100,15 @@ const ProjectsPage = () => {
       icon: '🔬'
     },
     {
-      id: 5,
+      id: 6,
       title: 'MoneyMate',
       subtitle: 'Personal Finance Management',
       description: 'Personal finance management app to track income/expenses, visualize trends, and gain financial insights.',
       category: 'mobile',
+      group: 'personal',
       type: 'Mobile App',
       duration: 'Jul 2024 – Aug 2024',
-      technologies: ['Flutter', 'Firebase'],
+      technologies: ['Flutter', 'Firebase', 'Provider'],
       apkUrl: 'https://github.com/CodeWithIsmail/MoneyMate/releases/tag/v1.0.0',
       githubUrl: 'https://github.com/CodeWithIsmail/MoneyMate',
       demoUrl: 'https://youtu.be/B9e9mVc1600',
@@ -95,11 +117,12 @@ const ProjectsPage = () => {
       icon: '💰'
     },
     {
-      id: 6,
+      id: 7,
       title: 'BanglaLens',
       subtitle: 'Text Recognition & Translation',
       description: 'Text recognition and translation app designed to automatically extract English word and Bangla meaning from image.',
       category: 'mobile',
+      group: 'personal',
       type: 'Mobile App',
       duration: 'Aug 2024 – Sept 2024',
       technologies: ['Flutter', 'Firebase', 'Google ML Kit'],
@@ -110,28 +133,45 @@ const ProjectsPage = () => {
       icon: '📷'
     },
     {
-      id: 7,
+      id: 8,
+      title: 'Smart Library System',
+      subtitle: 'Monolith to Microservices Migration',
+      description: 'From a monolithic application to a fully containerized, microservices-based system with reverse proxy and Docker.',
+      category: 'backend',
+      group: 'academic',
+      type: 'Distributed System',
+      duration: 'Apr 2025 – Jun 2025',
+      technologies: ['Node.js', 'Express.js', 'Nginx', 'Docker'],
+      githubUrl: 'https://devismail.me/sls',
+      featured: false,
+      achievements: ['6th Semester Distributed Systems Project'],
+      icon: '📖'
+    },
+    {
+      id: 9,
       title: 'StudyMate',
       subtitle: 'Academic Study Management',
       description: 'Academic study management Application for students to record activities, tasks and stay updated on coursework.',
       category: 'desktop',
+      group: 'academic',
       type: 'Desktop Application',
       duration: 'Jul 2023 – Sept 2023',
-      technologies: ['Java', 'Swing', 'OOP'],
+      technologies: ['Java'],
       githubUrl: 'https://github.com/CodeWithIsmail/StudyMate',
       featured: false,
       achievements: ['3rd Semester OOP Project'],
       icon: '📚'
     },
     {
-      id: 8,
+      id: 10,
       title: 'Typing Master',
       subtitle: 'Typing Skills Improvement',
       description: 'Application to improve typing skills with tutorial lessons, structured practice, and a gamified typing challenge.',
       category: 'desktop',
+      group: 'academic',
       type: 'Desktop Application',
       duration: 'Jul 2023 – Dec 2023',
-      technologies: ['C++', 'Game Development'],
+      technologies: ['C++'],
       githubUrl: 'https://github.com/CodeWithIsmail/SPL-1',
       featured: false,
       achievements: ['3rd Semester SPL-1 Project'],
@@ -142,17 +182,16 @@ const ProjectsPage = () => {
   const categories = [
     { key: 'all', label: 'All Projects', count: projects.length },
     { key: 'featured', label: 'Featured', count: projects.filter(p => p.featured).length },
-    { key: 'fullstack', label: 'Full Stack', count: projects.filter(p => p.category === 'fullstack').length },
-    { key: 'web', label: 'Web Apps', count: projects.filter(p => p.category === 'web').length },
-    { key: 'mobile', label: 'Mobile Apps', count: projects.filter(p => p.category === 'mobile').length },
-    { key: 'desktop', label: 'Desktop Apps', count: projects.filter(p => p.category === 'desktop').length }
+    { key: 'personal', label: 'Personal', count: projects.filter(p => p.group === 'personal').length },
+    { key: 'team', label: 'Team', count: projects.filter(p => p.group === 'team').length },
+    { key: 'academic', label: 'Academic', count: projects.filter(p => p.group === 'academic').length }
   ]
 
   const filteredProjects = filter === 'all' 
     ? projects 
     : filter === 'featured'
       ? projects.filter(project => project.featured)
-      : projects.filter(project => project.category === filter)
+      : projects.filter(project => project.group === filter)
 
   const getTypeIcon = (category) => {
     switch(category) {
@@ -183,6 +222,17 @@ const ProjectsPage = () => {
       case 'swing': return <FaJava className={iconClass} style={{color: '#ED8B00'}} />
       case 'oop': return <Code2 className={iconClass} />
       case 'game development': return <FaGamepad className={iconClass} />
+      case 'python': return <SiPython className={iconClass} style={{color: '#3776AB'}} />
+      case 'flask': return <SiFlask className={iconClass} style={{color: '#000000'}} />
+      case 'next.js': return <SiNextdotjs className={iconClass} style={{color: '#000000'}} />
+      case 'nestjs': return <SiNestjs className={iconClass} style={{color: '#EA2845'}} />
+      case 'tailwind css': return <SiTailwindcss className={iconClass} style={{color: '#06B6D4'}} />
+      case 'postgresql': return <SiPostgresql className={iconClass} style={{color: '#336791'}} />
+      case 'prisma': return <SiPrisma className={iconClass} style={{color: '#2D3748'}} />
+      case 'docker': return <SiDocker className={iconClass} style={{color: '#2496ED'}} />
+      case 'nginx': return <SiNginx className={iconClass} style={{color: '#009639'}} />
+      case 'sonarqube': return <SiSonarqube className={iconClass} style={{color: '#4E9BCD'}} />
+      case 'google auth': return <SiGoogle className={iconClass} style={{color: '#4285F4'}} />
       default: return <Code2 className={iconClass} />
     }
   }
@@ -512,23 +562,23 @@ const ProjectsPage = () => {
         >
           <div className="max-w-4xl mx-auto p-8 rounded-2xl backdrop-blur-md border bg-white/80 dark:bg-gray-900/80 border-gray-200/50 dark:border-gray-700/50 shadow-lg">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-              🎯 Project Highlights
+              Project Highlights
             </h3>
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <div>
                 <Trophy className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
                 <div className="text-lg font-semibold text-gray-900 dark:text-white">Hackathon Finalist</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Multiple competition projects</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Top 14 of 50 teams, S.N. Bose IT Hackathon</div>
               </div>
               <div>
                 <Users className="w-8 h-8 text-blue-500 mx-auto mb-2" />
-                <div className="text-lg font-semibold text-gray-900 dark:text-white">900+ Users</div>
+                <div className="text-lg font-semibold text-gray-900 dark:text-white">1K+ Users</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">CF Explorer platform</div>
               </div>
               <div>
                 <Code2 className="w-8 h-8 text-purple-500 mx-auto mb-2" />
-                <div className="text-lg font-semibold text-gray-900 dark:text-white">Full Stack Expert</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">End-to-end App & Web development</div>
+                <div className="text-lg font-semibold text-gray-900 dark:text-white">{projects.length} Projects</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Web, mobile, AI & distributed systems</div>
               </div>
             </div>
           </div>

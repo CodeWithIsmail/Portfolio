@@ -1,6 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Code, Laptop, Database, Wrench, TestTube, Brain } from "lucide-react";
+import {
+  Code,
+  Laptop,
+  Database,
+  Wrench,
+  TestTube,
+  Sparkles,
+  Rocket,
+  MousePointer2,
+} from "lucide-react";
 import {
   SiC,
   SiCplusplus,
@@ -29,12 +38,9 @@ import {
   SiIntellijidea,
   SiAndroidstudio,
   SiPostman,
-  SiSwagger,
   SiVercel,
-  SiJest,
-  SiSelenium,
-  SiWireshark,
-  SiVirtualbox,
+  SiClaude,
+  SiGithubcopilot,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { BiLogoVisualStudio } from "react-icons/bi";
@@ -126,7 +132,7 @@ const SkillsPage = () => {
       ],
     },
     {
-      title: "Databases & ORM",
+      title: "Databases & Backend",
       icon: <Database className="w-8 h-8" />,
       gradient: "from-orange-500 to-red-600",
       skills: [
@@ -207,54 +213,32 @@ const SkillsPage = () => {
           icon: <SiPostman className="w-8 h-8" style={{ color: "#FF6C37" }} />,
         },
         {
-          name: "Swagger",
-          icon: <SiSwagger className="w-8 h-8" style={{ color: "#85EA2D" }} />,
-        },
-        {
           name: "Vercel",
           icon: <SiVercel className="w-8 h-8" style={{ color: "#000000" }} />,
         },
       ],
     },
     {
-      title: "Testing & Others",
-      icon: <TestTube className="w-8 h-8" />,
+      title: "AI & Developer Tools",
+      icon: <Sparkles className="w-8 h-8" />,
       gradient: "from-cyan-500 to-blue-600",
       skills: [
         {
-          name: "Jest",
-          icon: <SiJest className="w-8 h-8" style={{ color: "#C21325" }} />,
+          name: "Claude",
+          icon: <SiClaude className="w-8 h-8" style={{ color: "#D97757" }} />,
         },
         {
-          name: "Selenium",
-          icon: <SiSelenium className="w-8 h-8" style={{ color: "#43B02A" }} />,
+          name: "Antigravity",
+          icon: <Rocket className="w-8 h-8" style={{ color: "#4285F4" }} />,
         },
         {
-          name: "Wireshark",
-          icon: (
-            <SiWireshark className="w-8 h-8" style={{ color: "#1679A7" }} />
-          ),
+          name: "Cursor",
+          icon: <MousePointer2 className="w-8 h-8" />,
         },
         {
-          name: "VirtualBox",
-          icon: (
-            <SiVirtualbox className="w-8 h-8" style={{ color: "#183A61" }} />
-          ),
+          name: "GitHub Copilot",
+          icon: <SiGithubcopilot className="w-8 h-8" />,
         },
-      ],
-    },
-    {
-      title: "Core Concepts",
-      icon: <Brain className="w-8 h-8" />,
-      gradient: "from-indigo-500 to-purple-600",
-      skills: [
-        { name: "DSA", icon: <Code className="w-8 h-8" /> },
-        { name: "OOP", icon: <Code className="w-8 h-8" /> },
-        { name: "Design Patterns", icon: <Code className="w-8 h-8" /> },
-        { name: "SRS", icon: <Code className="w-8 h-8" /> },
-        { name: "DBMS", icon: <Database className="w-8 h-8" /> },
-        { name: "SDLC", icon: <Code className="w-8 h-8" /> },
-        { name: "Testing", icon: <TestTube className="w-8 h-8" /> },
       ],
     },
   ];
@@ -346,7 +330,7 @@ const SkillsPage = () => {
               >
                 <Code className="w-8 h-8 text-blue-600 dark:text-blue-400 mx-auto mb-3" />
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                  Programming Excellence
+                  Programming Foundation
                 </h3>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                   Strong foundation in multiple programming languages and

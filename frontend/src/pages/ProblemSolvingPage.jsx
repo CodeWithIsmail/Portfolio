@@ -13,7 +13,7 @@ const ProblemSolvingPage = () => {
       contests: '85+',
       icon: <Code className="w-8 h-8" />,
       color: 'from-blue-500 to-blue-600',
-      link: 'https://codeforces.com/profile/Code_with_Ismail'
+      link: 'https://devismail.me/cf'
     },
     {
       name: 'CodeChef',
@@ -22,7 +22,7 @@ const ProblemSolvingPage = () => {
       contests: '20+',
       icon: <Target className="w-8 h-8" />,
       color: 'from-orange-500 to-red-500',
-      link: 'https://www.codechef.com/users/codewithismail'
+      link: 'https://devismail.me/cc'
     },
     {
       name: 'LeetCode',
@@ -31,7 +31,7 @@ const ProblemSolvingPage = () => {
       contests: 'Regular',
       icon: <Trophy className="w-8 h-8" />,
       color: 'from-yellow-500 to-orange-500',
-      link: 'https://leetcode.com/u/CodeWithIsmail'
+      link: 'https://devismail.me/lc'
     }
   ]
 
@@ -46,14 +46,21 @@ const ProblemSolvingPage = () => {
           description: '1250+ problems solved | Max rating 1427 | 85+ contests participated',
           year: '2023-Present',
           icon: <Code className="w-6 h-6" />,
-          link: 'https://codeforces.com/profile/Code_with_Ismail'
+          link: 'https://devismail.me/cf'
         },
         {
           title: 'CodeChef 3 Star Coder',
           description: '180+ problems solved | Max rating 1754 | 20+ contests participated',
           year: '2023-Present',
           icon: <Star className="w-6 h-6" />,
-          link: 'https://www.codechef.com/users/codewithismail'
+          link: 'https://devismail.me/cc'
+        },
+        {
+          title: 'LeetCode Problem Solver',
+          description: '150+ problems solved on LeetCode',
+          year: '2023-Present',
+          icon: <Target className="w-6 h-6" />,
+          link: 'https://devismail.me/lc'
         },
         {
           title: 'Battle of Brains 2024',
@@ -62,22 +69,16 @@ const ProblemSolvingPage = () => {
           icon: <Trophy className="w-6 h-6" />
         },
         {
-          title: 'Multi-Platform Problem Solver',
-          description: 'Solved 200+ problems on CSES, LightOJ, Toph platforms',
-          year: '2023-Present',
-          icon: <Target className="w-6 h-6" />
-        },
-        {
           title: 'CF Explorer Platform',
-          description: 'Built platform for competitive programmers on Codeforces with 900+ users',
+          description: 'Built platform for competitive programmers on Codeforces with 1K+ users',
           year: '2024-2025',
           icon: <Users className="w-6 h-6" />,
-          link: 'https://cfexplorer.vercel.app'
+          link: 'https://cfexplorer.devismail.me'
         },
         {
-          title: 'Problem Setter & Tester',
-          description: 'Problem Setter for National High School Programming Contest 2025 & KiU CSE FEST 2024',
-          year: '2024-2025',
+          title: 'Problem Setter',
+          description: 'Problem Setter, KiU CSE FEST 2024 (Competitive Programming Segment)',
+          year: '2024',
           icon: <Brain className="w-6 h-6" />
         },
         {
@@ -89,7 +90,7 @@ const ProblemSolvingPage = () => {
         {
           title: 'Competitive Programming Trainer',
           description: 'Trainer under IITSEC, mentoring first-year students in problem-solving and programming',
-          year: '2024-Present',
+          year: 'Oct 2024 - Mar 2025',
           icon: <BookOpen className="w-6 h-6" />
         }
       ]
@@ -108,45 +109,33 @@ const ProblemSolvingPage = () => {
         },
         {
           title: 'Learnathon 3.0',
-          description: 'Participated and completed hackathon organized by Geeky Solutions, Sponsored by Brain Station 23 - Built DU Tutors with Team React_ive',
-          year: '2024',
+          description: 'Participated in hackathon organized by Geeky Solutions, Sponsored by Brain Station 23, and achieved a score of 6.9 out of 10 - Built DU Tutors with Team React_ive',
+          year: '2024-2025',
           icon: <Award className="w-6 h-6" />,
           link: 'https://dututors.onrender.com'
         }
       ]
     },
-    // 'others': {
-    //   title: 'Others',
-    //   icon: <Medal className="w-6 h-6" />,
-    //   color: 'from-purple-500 to-pink-600',
-    //   achievements: [
-    //     {
-    //       title: 'IITSEC Competitive Programming Trainer',
-    //       description: 'Mentoring beginners in problem solving and competitive programming',
-    //       year: '2024-Present',
-    //       icon: <Users className="w-6 h-6" />
-    //     },
-    //     {
-    //       title: 'Learnathon 3.0 Certificate',
-    //       description: 'Certificate of completion from Geeky Solutions, Sponsored by Brain Station 23',
-    //       year: '2024-2025',
-    //       icon: <Award className="w-6 h-6" />,
-    //       link: 'https://learnathonproducts.geeky.solutions/products/df7c95d0-290c-40b4-a647-723003e88107/certificate'
-    //     },
-    //     {
-    //       title: 'LLMs in Industry and Academia Workshop',
-    //       description: 'Current trend Workshop by DSSE Research group, University of Dhaka',
-    //       year: '2025',
-    //       icon: <Brain className="w-6 h-6" />
-    //     },
-    //     {
-    //       title: 'Academic Excellence',
-    //       description: 'CGPA: 3.43 in Software Engineering, IIT, University of Dhaka',
-    //       year: '2022-Present',
-    //       icon: <Star className="w-6 h-6" />
-    //     }
-    //   ]
-    // }
+    'certificates': {
+      title: 'Certificates',
+      icon: <Medal className="w-6 h-6" />,
+      color: 'from-purple-500 to-pink-600',
+      achievements: [
+        {
+          title: 'Learnathon 3.0',
+          description: 'Certificate of completion, organized by Geeky Solutions, Sponsored by Brain Station 23',
+          year: 'Dec 2024 - Apr 2025',
+          icon: <Award className="w-6 h-6" />,
+          link: 'https://devismail.me/learnathon'
+        },
+        {
+          title: 'LLMs in Industry and Academia',
+          description: 'Current trend workshop by DSSE Research group, University of Dhaka',
+          year: 'Mar 2025',
+          icon: <Brain className="w-6 h-6" />
+        }
+      ]
+    }
   }
 
   const skills = [

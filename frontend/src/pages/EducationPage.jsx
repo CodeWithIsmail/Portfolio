@@ -21,9 +21,9 @@ const EducationPage = () => {
       id: 1,
       degree: "Bachelor of Science in Software Engineering",
       institution: "Institute of Information Technology, University of Dhaka",
-      duration: "2022 - 2026 (Expected)",
-      cgpa: "CGPA: 3.53 (up to 6th semester)",
-      status: "Current",
+      duration: "2022 - 2026",
+      cgpa: "CGPA: 3.6",
+      status: "Final Year",
       icon: <GraduationCap className="w-6 h-6" />,
       description:
         "Specialized in software development, algorithms, and system design with hands-on experience in modern programming languages and frameworks.",
@@ -60,7 +60,7 @@ const EducationPage = () => {
     {
       id: 3,
       degree: "Secondary School Certificate (SSC)",
-      institution: "Rampura Ekramunnesa High School",
+      institution: "Rampura Ekramunnessa High School",
       duration: "2017 - 2019",
       cgpa: "GPA: 5.00/5.00",
       status: "Completed",
@@ -169,10 +169,18 @@ const EducationPage = () => {
       issuer: "Geeky Solutions - Brain Station 23",
       date: "Dec 2024 – Apr 2025",
       // credentialId: "WD-2023-001",
-      link: "https://learnathonproducts.geeky.solutions/products/df7c95d0-290c-40b4-a647-723003e88107/certificate",
+      link: "https://devismail.me/learnathon",
       description:
-        "Industry standard MERN stack web development  training covering React.js, Node.js, Express.js, and MongoDB.",
+        "Industry standard MERN stack web development training covering React.js, Node.js, Express.js, and MongoDB.",
       skills: ["React.js", "Node.js", "MongoDB", "Express.js"],
+    },
+    {
+      title: "LLMs in Industry and Academia",
+      issuer: "DSSE Research Group, University of Dhaka",
+      date: "March 2025",
+      description:
+        "Current trend workshop on the use of Large Language Models in industry and academia.",
+      skills: ["LLMs", "AI", "Research"],
     },
     // {
     //   title: "Problem Solving Certification",
@@ -220,7 +228,7 @@ const EducationPage = () => {
                   <motion.div
                     whileHover={{ scale: 1.1 }}
                     className={`w-12 h-12 rounded-xl flex items-center justify-center ${
-                      edu.status === "Current"
+                      edu.status !== "Completed"
                         ? "bg-gradient-to-r from-green-500 to-blue-500"
                         : "bg-gradient-to-r from-blue-500 to-purple-600"
                     } text-white shadow-lg`}
@@ -238,7 +246,7 @@ const EducationPage = () => {
                   <div className="flex justify-between items-start mb-4">
                     <span
                       className={`px-3 py-1 rounded-full text-sm font-medium ${
-                        edu.status === "Current"
+                        edu.status !== "Completed"
                           ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300"
                           : "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300"
                       }`}
@@ -303,12 +311,16 @@ const EducationPage = () => {
                       </p>
                     </div>
                   </div>
-                  <a
-                    href={cert.link}
-                    className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
+                  {cert.link && (
+                    <a
+                      href={cert.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  )}
                 </div>
 
                 <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-2">

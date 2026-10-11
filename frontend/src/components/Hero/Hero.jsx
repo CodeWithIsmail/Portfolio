@@ -21,10 +21,10 @@ const Hero = () => {
 
   const roles = useMemo(
     () => [
-      "Problem Solver",
-      "Competitive Programmer",
+      "Software Engineer",
       "Full Stack Web Developer",
       "Flutter App Developer",
+      "Competitive Programmer",
     ],
     [],
   );
@@ -79,6 +79,8 @@ const Hero = () => {
         "PostgreSQL",
         "MySQL",
         "MongoDB",
+        "Prisma",
+        "Docker",
         "Tailwind CSS",
       ],
       color: "from-blue-500 to-cyan-500",
@@ -102,6 +104,8 @@ const Hero = () => {
         "Graph Theory",
         "Greedy",
         "Binary Search",
+        "C++",
+        "Python",
       ],
       color: "from-orange-500 to-red-500",
     },
@@ -171,7 +175,9 @@ const Hero = () => {
               experience in Full-stack web development using JavaScript,
               TypeScript, ExpressJS, NestJS, NextJS and Flutter app development.
               Actively involved in competitive programming, enhancing strong
-              problem-solving and algorithmic skills.
+              problem-solving and algorithmic skills. Passionate about building
+              efficient, user-focused applications and continuously exploring
+              new technologies.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -240,8 +246,6 @@ const Hero = () => {
                 <motion.a
                   whileHover={{ scale: 1.1, y: -2 }}
                   href="mailto:ismail.iit.du@gmail.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="p-3 bg-gray-100 dark:bg-gray-800 rounded-xl text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                 >
                   <Mail className="w-5 h-5" />

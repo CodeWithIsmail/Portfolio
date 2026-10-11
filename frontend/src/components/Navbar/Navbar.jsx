@@ -70,11 +70,11 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               <span className="font-medium">Experience</span>
             </Link>
             <Link
-              to="/education"
+              to="/projects"
               className="flex items-center space-x-2 px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-white/20 dark:hover:bg-gray-800/30 transition-all duration-300 group"
             >
-              <GraduationCap className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
-              <span className="font-medium">Education</span>
+              <Laptop className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
+              <span className="font-medium">Projects</span>
             </Link>
             <Link
               to="/skills"
@@ -84,18 +84,18 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               <span className="font-medium">Skills</span>
             </Link>
             <Link
+              to="/education"
+              className="flex items-center space-x-2 px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-white/20 dark:hover:bg-gray-800/30 transition-all duration-300 group"
+            >
+              <GraduationCap className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
+              <span className="font-medium">Education</span>
+            </Link>
+            <Link
               to="/problem-solving"
               className="flex items-center space-x-2 px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-white/20 dark:hover:bg-gray-800/30 transition-all duration-300 group"
             >
               <Trophy className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
               <span className="font-medium">Achievements</span>
-            </Link>
-            <Link
-              to="/projects"
-              className="flex items-center space-x-2 px-4 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-white/20 dark:hover:bg-gray-800/30 transition-all duration-300 group"
-            >
-              <Laptop className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
-              <span className="font-medium">Projects</span>
             </Link>
             {/* <Link
               to="/contact"
@@ -160,14 +160,13 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               <span className="font-medium">Experience</span>
             </Link>
             <Link
-              to="/education"
+              to="/projects"
               onClick={() => setIsMobileMenuOpen(false)}
               className="flex items-center space-x-3 px-4 py-3 rounded-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-gray-800/50 transition-all duration-300 group"
             >
-              <GraduationCap className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-              <span className="font-medium">Education</span>
+              <Laptop className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+              <span className="font-medium">Projects</span>
             </Link>
-
             <Link
               to="/skills"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -177,20 +176,21 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               <span className="font-medium">Skills</span>
             </Link>
             <Link
+              to="/education"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="flex items-center space-x-3 px-4 py-3 rounded-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-gray-800/50 transition-all duration-300 group"
+            >
+              <GraduationCap className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+              <span className="font-medium">Education</span>
+            </Link>
+
+            <Link
               to="/problem-solving"
               onClick={() => setIsMobileMenuOpen(false)}
               className="flex items-center space-x-3 px-4 py-3 rounded-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-gray-800/50 transition-all duration-300 group"
             >
               <Trophy className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
               <span className="font-medium">Achievements</span>
-            </Link>
-            <Link
-              to="/projects"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="flex items-center space-x-3 px-4 py-3 rounded-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-gray-800/50 transition-all duration-300 group"
-            >
-              <Laptop className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-              <span className="font-medium">Projects</span>
             </Link>
             {/* <Link
               to="/contact"

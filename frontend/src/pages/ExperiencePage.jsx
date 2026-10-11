@@ -20,8 +20,19 @@ const ExperiencePage = () => {
       responsibilities: [
         "Completed hands-on training on HTTP, REST, JavaScript, TypeScript, NodeJS, ExpressJS, ReactJS, PostgreSQL etc.",
         "Developed CareerStory - a full-stack web application of job interview experience.",
-        "Contributed to an in-house project using NestJS, Next.js, MySQL, Prisma etc.",
-        "Experienced in Git, GitHub, Jira, and Agile workflows following industry standard.",
+        "Contributed to ATS (Applicant Tracking System) project using NestJS, NextJS, MySQL, Prisma etc.",
+        "Experienced in Git, GitHub, Jira, and Agile workflows following industry standards.",
+      ],
+      techStack: [
+        "NestJS",
+        "Next.js",
+        "MySQL",
+        "Prisma",
+        "PostgreSQL",
+        "React.js",
+        "Express.js",
+        "TypeScript",
+        "Jira",
       ],
     },
     // Add more experiences here
@@ -91,6 +102,18 @@ const ExperiencePage = () => {
                       </li>
                     ))}
                   </ul>
+                  {exp.techStack && (
+                    <div className="flex flex-wrap gap-2 mt-6">
+                      {exp.techStack.map((tech) => (
+                        <span
+                          key={tech}
+                          className="px-3 py-1 text-xs font-medium rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-800"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             </motion.div>
